@@ -9,5 +9,10 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
-// Form validation
-const form = document.getElementById
+// Toggle Navigation for mobile
+const toggleNav = () => {
+    const nav = document.querySelector('header nav ul');
+    nav.classList.toggle('active');
+}
+
+document.querySelector('.logo').addEventListener('click', toggleNav);
